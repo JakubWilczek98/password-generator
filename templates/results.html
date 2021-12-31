@@ -8,11 +8,15 @@
                 <label for = "pass_length"> How long should be your new password: </label>
                 <input type = "text" name="pass_length" id = "pass_length">
                 <br/>
-                <h4>Choose types of symbols you want to see in your new password</h4>
+                <h4>Choose types of symbols you want to see in your new password:</h4>
             	<input type="checkbox" name="letters_value" value=True> Letters
             	<input type="checkbox" name="digits_value" value=True> Digits
             	<input type="checkbox" name="special_characters_value" value=True> Special characters
-            	<input type = "Submit" class = "file_submit"> 
+            	<input type = "Submit" class = "file_submit">
+                    
+                {% if new_password %}
+                    <h3  style="color: blue;">Generated password: {{new_password}}</h3>            
+                {% endif %}                                   
             </form>
         </section>
     </body>
