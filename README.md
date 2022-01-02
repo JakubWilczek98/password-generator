@@ -1,4 +1,4 @@
-#Password generator
+#Password generator - web app
 
 User should choose password length and types of characters.
 
